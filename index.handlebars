@@ -1,0 +1,33 @@
+<head>
+    <link href="/css/index.css" rel="stylesheet" >
+</head>
+<body class="body_menu">
+    <img src="img/logo.png" class="logo2030">
+    <div class="container_menu">
+        <ul class="menu1">
+            <li><a href="/tablapuntos">RANKING</a></li>
+            <li><a id="infoButton" class="botonreglas" >REGLAS DEL JUEGO</a>
+                <div id="infoModal">
+                    <button id="closeButton" >Cerrar</button>
+                    <p>En cada partida de Preguntados, los jugadores tendrán la oportunidad de responder una pregunta relacionada con los Objetivos de Desarrollo Sostenible de las Naciones Unidas. Si responden correctamente, recibirán un bono de puntos y contribuirán a la difusión del conocimiento sobre los ODS. Esto fomentará la conciencia sobre los desafíos globales y la importancia de trabajar juntos para lograr un mundo más sostenible.</p>
+                </div>
+
+                <script>
+                    const infoButton = document.getElementById('infoButton');
+                    const infoModal = document.getElementById('infoModal');
+                    const closeButton = document.getElementById('closeButton');
+
+                    infoButton.addEventListener('click', () => {
+                        infoModal.style.display = 'block';
+                    });
+
+                    closeButton.addEventListener('click', () => {
+                        infoModal.style.display = 'none';
+                    });
+                </script>
+            </li>
+            <li><a href="/game">JUGAR</a></li>
+        </ul>
+    </div>
+</body>
+
