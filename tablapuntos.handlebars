@@ -1,0 +1,33 @@
+<body id="tablapuntos">
+    <div class="tablapuntos2">
+        <button onclick="irIndex()"> Ir al menu</button>
+        <div class="tablapuntos-head">
+        <table>
+        <thead>
+    <tr > 
+        <th class="th1">  usuario 1 - </th>   
+        <th class="th1">  usuario 2  </th>   
+        <th class="th1"> - usuario 3</th>   
+    </tr>
+    </thead>
+</table>
+</div>
+<div class="table100-body js-pscroll ps ps--active-y">
+<table id="tablapuntos">
+<tbody>
+    {{#each traer_puntos}}
+        <td class="puntaje"> -usuario: {{this.usuario_punto}}  puntaje total: {{this.punto_global}} </td>
+                
+    {{/each}}
+</tr>     
+<tr>        
+      
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+    
+
+
