@@ -1,0 +1,22 @@
+<head>
+    <title>PreguntadODS</title>
+    <link href="/css/juego.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+        <button onclick="irRanking()"> ir a tabla de usuarios</button>
+        <p id="pregunta"></p>
+        
+            <ul id="opciones">
+                <li><button id="opcion1" class="botones" onclick="verificarRespuesta()"></button></li>
+                <li><button id="opcion2" class="botones" onclick="verificarRespuesta()"></button></li>
+                <li><button id="opcion3" class="botones" onclick="verificarRespuesta()"></button></li>
+            </ul>
+        
+        <p id="resultado"></p>
+    
+    </div>
+    <script>
+        mostrarPregunta()
+    </script>
+</body>
