@@ -1,32 +1,20 @@
 <body class="body_admin"> 
     <div class="big-container">
-        <div class="container-input-agregar">  
+        <div class="container-input-eliminar">  
             <div class="login-form">
-                    <h1>AGREGUE SU PREGUNTA</h1>
+                    <h1>ELIMINE SU PREGUNTA POR ID</h1>
             </div>     
-            <form action="/agregar" method="PUT" id="agregarPregunta" class="container-sm"> 
-                <div class="form__group field">
-                    <label for="question" class="form__label"></label>
-                    <input type="text" class="form__field" id="question" name="question" placeholder="Ingrese una pregunta">
-                </div>
-                <div class="form__group field">
-                    <label for="answer1" class="form__label"></label>
-                    <input type="text" class="form__field" id="answer1" name="answer1" placeholder="primer respuesta">
-                </div>
-                <div class="form__group field">
-                    <label for="answer2" class="form__label"></label>
-                    <input type="text" class="form__field" id="answer2" name="answer2" placeholder="segunda respuesta">
-                </div>
-                <div class="form__group field">
-                    <label for="answer3" class="form__label"></label>
-                    <input type="text" class="form__field" id="answer3" name="answer3" placeholder="ultima respuesta">
-                </div>
-                <div class="outerLogin">
-                    <input type="button" class="button_slide slide_right" onclick="admin()"value="Agregue la palabra">
-                </div> 
-                </div>
-
-            </form>
+                        <form action="/eliminar" method="PUT" id="agregarPregunta" class="container-sm"> 
+                    <form action="/eliminarpregunta" method="PUT" id="eliminarPregunta" class="container-sm"> 
+                    <div class="form__group field">
+                        <label for="id" class="form__label"></label>
+                        <input type="int" class="form__field" id="id" name="id" placeholder="Ingrese ID de pregunta">
+                    </div>
+                    <div class="outerLogin">
+                        <input type="button" class="button_slide slide_right" onclick="admin2()" value="elimine la palabra">
+                    </div>
+                    </form>
+                </form>
         </div>
     </div>
 </body>
